@@ -1,0 +1,11 @@
+<div id="app">
+
+    <h3 v-for="task in tasks"> {{ task.task }}  </h3>
+
+  <!--   form  -->
+  <div>
+    Task: <input type="text" v-model="newTask">
+    <button v-on:click="addTask()">Add Task!</button>
+  </div>
+  <!--   form  -->
+</div>
